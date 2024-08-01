@@ -1,0 +1,1 @@
+Icons © Noxcrew Ltd. All rights reserved.

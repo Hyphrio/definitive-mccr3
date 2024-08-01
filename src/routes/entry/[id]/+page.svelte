@@ -11,6 +11,7 @@
 	const title = submission.team_name ? submission.team_name : submission.video_title;
 
 	const members = submission.team_members;
+	const colour = submission.colour;
 	const rating = submission.hyphr_rating;
 </script>
 
@@ -38,6 +39,17 @@
 						<p>{member}</p>
 					</div>
 				{/each}
+			</div>
+		</div>
+	{/if}
+
+	{#if colour}
+		<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col items-center">
+			<h2>Team Colour</h2>
+			<div class="flex flex-row gap-3 w-full">
+				<div class="flex flex-col items-center justify-start gap-2 flex-1">
+					<img alt={colour} src={`/icons/${colour}.png`} class="w-12 h-12 m-0" />
+				</div>
 			</div>
 		</div>
 	{/if}

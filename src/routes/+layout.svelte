@@ -20,7 +20,7 @@
 			Player icons from <a href="https://mineatar.io">Mineatar.</a> <br /> <br />
 
 			Members might be missing players due to being unable to index the IGN's, in that case please
-			message me at Discord. (@Hyphrio) <br />
+			message me at MCC Island (Hyphr) or at Discord. (@Hyphrio) <br />
 			Disclaimer: Ratings here are my opinions and does not reflect whether or not the team would get
 			in MCC Rising. Noxcrew makes the decision if the team's getting in, not me :D
 		</p>
