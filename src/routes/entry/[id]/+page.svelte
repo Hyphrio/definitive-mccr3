@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { fromYtToEmbed } from '$lib/entryhelpers.js';
+	import { redirect } from '@sveltejs/kit';
 
 	export let data;
 
@@ -13,11 +14,11 @@
 	const rating = submission.hyphr_rating;
 </script>
 
-<div class=" flex flex-col items-center my-12 gap-8">
+<div class=" flex flex-col items-center my-12 mx-2 gap-8">
 	<div class="prose lg:prose-xl dark:prose-invert text-center">
 		<h1>{title}</h1>
 	</div>
-	<div class="flex w-5/12 h-auto aspect-video">
+	<div class="flex lg:w-5/12 w-full h-auto aspect-video">
 		<iframe
 			class="grow"
 			src={video}
@@ -28,7 +29,7 @@
 		></iframe>
 	</div>
 	{#if members}
-		<div class="prose dark:prose-invert w-5/12 flex flex-col items-center">
+		<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col items-center">
 			<h2>Members</h2>
 			<div class="flex flex-row gap-3 w-full">
 				{#each members as member}
@@ -40,7 +41,7 @@
 			</div>
 		</div>
 	{/if}
-	<div class="prose dark:prose-invert w-5/12 flex flex-col items-center">
+	<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col items-center">
 		<h2>Hyphr's personal rating</h2>
 		<h3>{rating}</h3>
 	</div>
