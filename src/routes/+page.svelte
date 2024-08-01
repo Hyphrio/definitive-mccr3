@@ -7,8 +7,10 @@
 		</div>
 
 		<p class="lead">
-			From the creator of MCC Rising Applications Stash, Hyphr presents The Definitive MCC Rising 3
-			Submissions List!
+			From the creator of <a
+				href="https://docs.google.com/spreadsheets/d/11cnoHzN_aZSyAnSeGB2W50xX0cbD6Qrv6W93tPVPvzE/edit?usp=sharing"
+				>MCC Rising Applications Stash</a
+			>, Hyphr presents The Definitive MCC Rising 3 Submissions List!
 		</p>
 		<p>
 			This would serve as a website for listing all the Rising applications I've watched, and to
