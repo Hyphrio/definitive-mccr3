@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center my-12">
+<div class="flex flex-col items-center my-12 mx-4">
 	<div class="prose lg:prose-xl dark:prose-invert text-center">
 		<h1>TDRMCCR3ST</h1>
 		<div class="not-prose flex flex-row gap-4 items-center justify-center">
