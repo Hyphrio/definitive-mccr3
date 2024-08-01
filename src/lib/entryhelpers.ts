@@ -11,6 +11,18 @@ function fromYtToEmbed(link: string): string {
     }
 }
 
+function shortenYTLinks(link: string): string {
+    const url = new URL(link);
+
+    const v = url.searchParams.get('v');
+
+    if (v) {
+        return `https://youtu.be/${v}`;
+    } else {
+        return 'https://youtube.com';
+    }
+}
+
 async function mcUsernameToUuid(username: string): Promise<string | null> {
     try {
         const data = await fetch(`https://api.mojang.com/users/profiles/minecraft/${username}`);
@@ -22,7 +34,10 @@ async function mcUsernameToUuid(username: string): Promise<string | null> {
     }
 }
 
+
+
 export {
     fromYtToEmbed,
+    shortenYTLinks,
     mcUsernameToUuid
 }
