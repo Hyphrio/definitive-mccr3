@@ -5,5 +5,15 @@
 			<a href="/all" class="btn">All submissions</a>
 			<a href="/random" class=" btn btn-primary">I'm feeling lucky</a>
 		</div>
+
+		<p class="lead">
+			From the creator of MCC Rising Applications Stash, Hyphr presents The Definitive MCC Rising 3
+			Submissions List!
+		</p>
+		<p>
+			This would serve as a website for listing all the Rising applications I've watched, and to
+			rate them. <br />
+			Feeling lucky? Click the button to watch a random submission!
+		</p>
 	</div>
 </div>
