@@ -5,9 +5,9 @@
 	const submissions = data.submissions;
 </script>
 
-<div class="p-4 w-full overflow-x-auto">
+<div class="w-full overflow-x-auto">
 	{#if submissions}
-		<table class="table overflow-x-auto">
+		<table class="m-4 table overflow-x-auto">
 			<thead>
 				<tr>
 					<th>ID</th>
