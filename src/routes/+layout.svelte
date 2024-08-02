@@ -1,22 +1,17 @@
 <script lang="ts">
 	import '@fontsource-variable/outfit';
 	import './app.css';
-	import { ModeWatcher, toggleMode, mode } from 'mode-watcher';
-	import { onMount } from 'svelte';
+	import { ModeWatcher, toggleMode, mode, theme, setTheme } from 'mode-watcher';
 	let { children } = $props();
 
 	function themeToggle() {
 		toggleMode();
-		const root = document.documentElement;
-
-		root.setAttribute('data-theme', `${$mode}`);
+		if ($theme === 'light') {
+			setTheme('dark');
+		} else {
+			setTheme('light');
+		}
 	}
-
-	onMount(() => {
-		const root = document.documentElement;
-
-		root.setAttribute('data-theme', `${$mode}`);
-	});
 </script>
 
 <ModeWatcher></ModeWatcher>
