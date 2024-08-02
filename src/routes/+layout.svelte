@@ -97,7 +97,8 @@
 			missing IGN's please message me at MCC Island (Hyphr) or at Discord. (@Hyphrio) <br />
 			Disclaimer: <br />
 			Ratings here are my opinion and does not reflect whether or not the team would get in MCC Rising.
-			Noxcrew makes the decision if the team's getting in, not me, so keep your hopes up! :D
+			Noxcrew makes the decision if the team's getting in, not me, so keep your hopes up! Even if I rated
+			you low, your app is still goated! :D
 		</p>
 	</div>
 </footer>
