@@ -33,7 +33,7 @@
 		></iframe>
 	</div>
 	{#if members}
-		<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col items-center">
+		<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col flex-wrap items-center">
 			<h2>Members</h2>
 			<div class="flex flex-row gap-3 w-full">
 				{#each members as member}
