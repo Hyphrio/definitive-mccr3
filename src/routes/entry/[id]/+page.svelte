@@ -15,7 +15,7 @@
 	const rating = submission.hyphr_rating;
 </script>
 
-<div class=" flex flex-col items-center my-12 mx-2 gap-8">
+<div class=" flex flex-col items-center my-12 gap-8">
 	<div class="prose lg:prose-xl dark:prose-invert text-center">
 		<h1>{title}</h1>
 	</div>

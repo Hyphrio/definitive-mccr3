@@ -16,5 +16,6 @@ export default {
     rippleUi,
     typopgraphy,
   ],
+  darkMode: "selector"
 }
 

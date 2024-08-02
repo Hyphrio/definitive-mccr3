@@ -7,7 +7,7 @@
 
 <div class="w-full overflow-x-auto">
 	{#if submissions}
-		<table class="m-4 table overflow-x-auto">
+		<table class="table">
 			<thead>
 				<tr>
 					<th>ID</th>
