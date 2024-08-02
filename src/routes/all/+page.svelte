@@ -1,8 +1,12 @@
 <script lang="ts">
 	import { shortenYTLinks } from '$lib/entryhelpers.js';
+	import { getContext } from 'svelte';
+	import type { Writable } from 'svelte/store';
 
 	export let data;
 	const submissions = data.submissions;
+
+	const showRatings: Writable<boolean> = getContext('showRatings');
 </script>
 
 <div class="w-full overflow-x-auto">
@@ -14,7 +18,9 @@
 					<th>Video</th>
 					<th>Video Title / Team Name</th>
 					<th>Members</th>
-					<th>Hyphr's Rating</th>
+					{#if $showRatings}
+						<th>Hyphr's Rating</th>
+					{/if}
 				</tr>
 			</thead>
 
@@ -36,7 +42,9 @@
 						{/if}
 
 						<th>{sub.team_members ? sub.team_members.join(', ') : 'Unable to index'}</th>
-						<th>{sub.hyphr_rating}</th>
+						{#if $showRatings}
+							<th>{sub.hyphr_rating}</th>
+						{/if}
 					</tr>
 				{/each}
 			</tbody>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fromYtToEmbed } from '$lib/entryhelpers.js';
-	import { redirect } from '@sveltejs/kit';
+	import { getContext } from 'svelte';
+	import type { Writable } from 'svelte/store';
 
 	export let data;
 
@@ -13,6 +14,8 @@
 	const members = submission.team_members;
 	const colour = submission.colour;
 	const rating = submission.hyphr_rating;
+
+	const showRatings: Writable<boolean> = getContext('showRatings');
 </script>
 
 <div class=" flex flex-col items-center my-12 gap-8">
@@ -53,8 +56,10 @@
 			</div>
 		</div>
 	{/if}
-	<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col items-center">
-		<h2>Hyphr's personal rating</h2>
-		<h3>{rating}</h3>
-	</div>
+	{#if $showRatings}
+		<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col items-center">
+			<h2>Hyphr's personal rating</h2>
+			<h3>{rating}</h3>
+		</div>
+	{/if}
 </div>
