@@ -9,6 +9,8 @@ export async function load() {
 
     const submissions: SubmissionData[] | null = data;
 
+    submissions?.sort((a, b) => a.id - b.id)
+
     return {
         submissions
     }
