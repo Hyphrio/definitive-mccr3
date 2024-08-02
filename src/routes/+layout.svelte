@@ -2,6 +2,7 @@
 	import '@fontsource-variable/outfit';
 	import './app.css';
 	import { ModeWatcher, toggleMode, mode } from 'mode-watcher';
+	import { onMount } from 'svelte';
 	let { children } = $props();
 
 	function themeToggle() {
@@ -10,6 +11,12 @@
 
 		root.setAttribute('data-theme', `${$mode}`);
 	}
+
+	onMount(() => {
+		const root = document.documentElement;
+
+		root.setAttribute('data-theme', `${$mode}`);
+	});
 </script>
 
 <ModeWatcher></ModeWatcher>
