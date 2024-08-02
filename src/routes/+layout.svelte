@@ -1,17 +1,19 @@
 <script lang="ts">
 	import '@fontsource-variable/outfit';
 	import './app.css';
-	import { ModeWatcher, toggleMode, mode, theme, setTheme } from 'mode-watcher';
+	import { ModeWatcher, toggleMode, mode, setTheme, theme } from 'mode-watcher';
 	let { children } = $props();
 
 	function themeToggle() {
 		toggleMode();
-		if ($theme === 'light') {
+		console.log('mode is', $mode, '; theme is', $theme);
+		if ($mode === 'dark') {
 			setTheme('dark');
 		} else {
 			setTheme('light');
 		}
 	}
+	console.log('mode is', $mode, '; theme is', $theme);
 </script>
 
 <ModeWatcher></ModeWatcher>
