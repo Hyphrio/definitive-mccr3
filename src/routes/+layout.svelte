@@ -19,11 +19,11 @@
 			Not affiliated with MC Championship, Noxcrew, Mojang Studios or Microsoft. <br />
 			Player icons from <a href="https://mineatar.io">Mineatar.</a> <br /> <br />
 
-			Members might be missing players due to being unable to index the IGN's, in that case please
-			message me at MCC Island (Hyphr) or at Discord. (@Hyphrio) <br />
-			Disclaimer: Ratings here are my opinions and does not reflect whether or not the team would get
-			in MCC Rising. Noxcrew makes the decision if the team's getting in, not me, so keep your hopes
-			up! :D
+			Members might be missing players due to being unable to index the IGN's, if you know the
+			missing IGN's please message me at MCC Island (Hyphr) or at Discord. (@Hyphrio) <br />
+			Disclaimer: <br />
+			Ratings here are my opinion and does not reflect whether or not the team would get in MCC Rising.
+			Noxcrew makes the decision if the team's getting in, not me, so keep your hopes up! :D
 		</p>
 	</div>
 </footer>

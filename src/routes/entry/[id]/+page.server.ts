@@ -12,10 +12,10 @@ export async function load({ params }) {
 
     if (error) throw redirect(404, "/404")
 
-    console.log(data)
-
     // Cast type
     const submission: SubmissionData = data[0];
+
+    if (!submission.video) throw redirect(404, "/404")
 
     return {
         submission
