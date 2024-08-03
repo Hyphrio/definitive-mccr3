@@ -2,7 +2,10 @@ import type { SubmissionData } from '$lib/submissions.js';
 import { supabase } from '$lib/supabase.js';
 import { redirect } from '@sveltejs/kit';
 
-export async function load({ params }) {
+export async function load({ params, url }) {
+    const showRatingsParams = url.searchParams.get("showRatings");
+    const showRatings = showRatingsParams && showRatingsParams === "true" ? true : false
+
     const id = params.id;
 
     // Pull the data of the id
@@ -18,6 +21,7 @@ export async function load({ params }) {
     if (!submission.video) throw redirect(404, "/404")
 
     return {
-        submission
+        submission,
+        showRatings
     }
 }
