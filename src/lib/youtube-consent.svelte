@@ -27,7 +27,7 @@
 			class="bg-gray-3 flex flex-col p-8 rounded-md w-full h-full prose dark:prose-invert items-center justify-center max-w-none"
 		>
 			<h2 class="text-center">
-				By clicking this button, you agree that YouTube may collect personal information.
+				By clicking this button, you agree that YouTube may collect personally identifiable information.
 			</h2>
 			<button
 				class="btn btn-primary"
