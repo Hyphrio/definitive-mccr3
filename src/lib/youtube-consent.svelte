@@ -12,10 +12,10 @@
 	});
 </script>
 
-<div class="flex lg:w-5/12 w-full h-auto aspect-video">
+<div class="flex lg:w-5/12 w-full h-auto">
 	{#if showYtEmbeds}
 		<iframe
-			class="grow"
+			class="grow aspect-video"
 			src={video}
 			{title}
 			frameborder="0"
