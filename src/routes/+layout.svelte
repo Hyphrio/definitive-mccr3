@@ -17,7 +17,6 @@
 	}
 
 	let showRatings = writable(false);
-
 	setContext('showRatings', showRatings);
 </script>
 

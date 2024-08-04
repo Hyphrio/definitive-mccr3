@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { fromYtToEmbed } from '$lib/entryhelpers.js';
+	import YoutubeConsent from '$lib/youtube-consent.svelte';
 	import { getContext } from 'svelte';
 	import type { Writable } from 'svelte/store';
 
-	export let data;
+	const { data } = $props();
 
 	const submission = data.submission;
 
@@ -24,16 +26,7 @@
 	<div class="prose lg:prose-xl dark:prose-invert text-center">
 		<h1>{title}</h1>
 	</div>
-	<div class="flex lg:w-5/12 w-full h-auto aspect-video">
-		<iframe
-			class="grow"
-			src={video}
-			{title}
-			frameborder="0"
-			allow="autoplay; encrypted-media"
-			allowfullscreen
-		></iframe>
-	</div>
+	<YoutubeConsent {video} {title}></YoutubeConsent>
 	{#if members}
 		<div class="prose dark:prose-invert lg:w-5/12 w-full flex flex-col flex-wrap items-center">
 			<h2>Members</h2>
