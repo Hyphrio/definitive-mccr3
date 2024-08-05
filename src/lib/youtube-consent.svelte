@@ -20,6 +20,7 @@
 			{title}
 			frameborder="0"
 			allow="autoplay; encrypted-media"
+			sandbox="allow-scripts allow-popups allow-same-origin"
 			allowfullscreen
 		></iframe>
 	{:else if showYtEmbeds === false}
@@ -28,7 +29,9 @@
 		>
 			<h2 class="text-center">
 				By clicking this button, you agree that YouTube may collect personally identifiable
-				information.
+				information in accordance to Google's <a href="https://policies.google.com/privacy"
+					>Privacy Policy.</a
+				>
 			</h2>
 			<button
 				class="btn btn-primary"

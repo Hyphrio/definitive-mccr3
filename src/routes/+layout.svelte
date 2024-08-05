@@ -4,6 +4,8 @@
 	import { ModeWatcher, toggleMode, mode, setTheme, theme } from 'mode-watcher';
 	import { writable } from 'svelte/store';
 	import { setContext } from 'svelte';
+	import CurrentPageNavbar from '$lib/current-page-navbar.svelte';
+	import CurrentPageDropdown from '$lib/current-page-dropdown.svelte';
 	let { children } = $props();
 
 	function themeToggle() {
@@ -23,11 +25,39 @@
 <ModeWatcher></ModeWatcher>
 
 <div class="navbar navbar-bordered">
-	<div class="navbar-start">
-		<a href="/" class="navbar-item"><div class="px-4">TDRMCCR3ST</div></a>
+	<div class="navbar-start flex-9">
+		<h1 class="font-bold px-4">TDRMCCR3ST</h1>
+		<!-- Navbar on 640px+ -->
+		<div class="px-4 flex-row gap-4 items-center hidden sm:flex">
+			<CurrentPageNavbar href="/">Home</CurrentPageNavbar>
+			<CurrentPageNavbar href="/all">All submissions</CurrentPageNavbar>
+			<CurrentPageNavbar href="/stats">Statistics</CurrentPageNavbar>
+		</div>
 	</div>
-	<div class="navbar-end">
+	<div class="navbar-end flex-1">
 		<div class="px-4 flex gap-2">
+			<!-- Popover on small screens -->
+			<div class="dropdown sm:hidden">
+				<span class="tooltip tooltip-bottom" data-tooltip="Open menu">
+					<button class="btn btn-ghost" tabindex="0" aria-label="Open menu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+							<path
+								fill="none"
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 12h18M3 6h18M3 18h18"
+							/>
+						</svg>
+					</button>
+				</span>
+				<div class="dropdown-menu dropdown-menu-bottom-left">
+					<CurrentPageDropdown href="/">Home</CurrentPageDropdown>
+					<CurrentPageDropdown href="/all">All submissions</CurrentPageDropdown>
+					<CurrentPageDropdown href="/stats">Statistics</CurrentPageDropdown>
+				</div>
+			</div>
 			<span class="tooltip tooltip-bottom" data-tooltip="Toggle mode">
 				<button class="btn btn-ghost" onclick={themeToggle} aria-label="Toggle mode">
 					{#if $mode === 'light'}
