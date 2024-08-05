@@ -35,11 +35,11 @@
 		</div>
 	</div>
 	<div class="navbar-end flex-1">
-		<div class="px-4 flex gap-2">
+		<div class="px-4 flex gap-2 items-center">
 			<!-- Popover on small screens -->
 			<div class="dropdown md:hidden">
 				<span class="tooltip tooltip-bottom" data-tooltip="Open menu">
-					<button class="btn btn-ghost" tabindex="0" aria-label="Open menu">
+					<button class="btn btn-ghost p-3 h-auto" tabindex="0" aria-label="Open menu">
 						<!-- Feather Icons: menu -->
 						<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
 							<path
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 			<span class="tooltip tooltip-bottom" data-tooltip="Toggle mode">
-				<button class="btn btn-ghost" onclick={themeToggle} aria-label="Toggle mode">
+				<button class="btn btn-ghost p-3 h-auto" onclick={themeToggle} aria-label="Toggle mode">
 					{#if $mode === 'light'}
 						<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
 							><path
@@ -81,7 +81,7 @@
 				class="tooltip tooltip-bottom"
 				data-tooltip={`${!$showRatings ? 'Show' : 'Hide'} ratings`}
 				><button
-					class="btn btn-ghost"
+					class="btn btn-ghost p-3 h-auto"
 					aria-label="Toggle ratings"
 					onclick={() => showRatings.update((r) => !r)}
 				>
@@ -115,7 +115,7 @@
 					target="_blank"
 					href="https://github.com/Hyphrio/definitive-mccr3"
 					aria-label="Source code on GitHub"
-					class="btn btn-ghost"
+					class="btn btn-ghost p-3 h-auto"
 				>
 					<!-- Feather Icons: GitHub -->
 					<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
