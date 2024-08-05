@@ -2,13 +2,10 @@ import { supabase } from "$lib/supabase";
 import { redirect } from "@sveltejs/kit";
 
 export async function load() {
-    // Take a random id
-    //
-    // SQL function:
-    // SELECT id FROM "Submissions" TABLESAMPLE SYSTEM_ROWS(1*10) ORDER BY RANDOM() LIMIT 1;
-    const id = await supabase.rpc('random_submission');
+    const { count, error } = await supabase.from("Submissions")
+        .select("id", { count: "exact" });
 
-    if (id.error) console.log(id.error)
+    if (error) console.log(error)
 
-    throw redirect(307, `/entry/${id.data}`)
+    throw redirect(307, `/entry/${Math.floor(Math.random() * (count ? count : 1))}`)
 }
