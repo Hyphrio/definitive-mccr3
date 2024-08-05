@@ -6,6 +6,6 @@
 	let { href, children }: { href: string; children: Snippet<[]> } = $props();
 </script>
 
-<a tabindex="-1" {href} class={path === href ? 'dropdown-item dropdown-active' : 'dropdown-item'}
+<a {href} class={path === href ? 'dropdown-item dropdown-active' : 'dropdown-item'}
 	>{@render children()}</a
 >
