@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
 	import { fromYtToEmbed } from '$lib/entryhelpers.js';
 	import YoutubeConsent from '$lib/youtube-consent.svelte';
 	import { getContext } from 'svelte';

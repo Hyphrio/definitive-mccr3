@@ -31,7 +31,9 @@
 							<a href={`/entry/${sub.id}`}>{sub.id}</a>
 						</th>
 						<th>
-							<a href={shortenYTLinks(sub.video)}>{shortenYTLinks(sub.video)}</a>
+							{#if sub.video}
+								<a href={shortenYTLinks(sub.video)}>{shortenYTLinks(sub.video)}</a>
+							{/if}
 						</th>
 						{#if sub.team_name}
 							<th>{sub.team_name}</th>

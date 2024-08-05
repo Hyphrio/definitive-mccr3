@@ -1,5 +1,7 @@
 
-function fromYtToEmbed(link: string): string {
+function fromYtToEmbed(link: string | null | undefined): string {
+    if (!link) return ''
+
     const url = new URL(link);
 
     const v = url.searchParams.get('v');

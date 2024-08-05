@@ -1,6 +1,6 @@
 import type { SubmissionData } from '$lib/submissions.js';
 import { supabase } from '$lib/supabase.js';
-import { redirect } from '@sveltejs/kit';
+import { error as skError } from '@sveltejs/kit';
 
 export async function load({ params, url }) {
     const showRatingsParams = url.searchParams.get("showRatings");
@@ -13,12 +13,11 @@ export async function load({ params, url }) {
         .select()
         .eq('id', id);
 
-    if (error) throw redirect(404, "/404")
+    if (!data || data?.length === 0) throw skError(404)
 
     // Cast type
     const submission: SubmissionData = data[0];
 
-    if (!submission.video) throw redirect(404, "/404")
 
     return {
         submission,

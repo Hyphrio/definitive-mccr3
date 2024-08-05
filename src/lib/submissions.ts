@@ -1,6 +1,6 @@
 export type SubmissionData = {
     id: number,
-    video: string,
+    video: string | null,
     video_title: string | null,
     team_name: string | null,
     team_members: string[] | null,

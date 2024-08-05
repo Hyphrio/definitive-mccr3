@@ -26,7 +26,7 @@
 
 <div class="navbar navbar-bordered">
 	<div class="navbar-start flex-9">
-		<h1 class="font-bold px-4">TDRMCCR3ST</h1>
+		<a href="/" class="font-bold px-4">TDRMCCR3ST</a>
 		<!-- Navbar on 640px+ -->
 		<div class="px-4 flex-row gap-4 items-center hidden md:flex">
 			<CurrentPageNavbar href="/">Home</CurrentPageNavbar>
