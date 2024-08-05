@@ -27,27 +27,29 @@
 <div class="navbar navbar-bordered">
 	<div class="navbar-start flex-9">
 		<!-- Popover on small screens -->
-		<div class="dropdown dropdown-hover md:hidden">
-			<button class="btn btn-ghost p-3 h-auto" tabindex="0" aria-label="Open menu">
-				<!-- Feather Icons: menu -->
-				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-					<path
-						fill="none"
-						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M3 12h18M3 6h18M3 18h18"
-					/>
-				</svg>
-			</button>
+		<div class="dropdown px-4 md:hidden">
+			<span class="tooltip tooltip-bottom" data-tooltip="Menu">
+				<button class="btn btn-ghost p-3 h-auto" tabindex="0" aria-label="Open menu">
+					<!-- Feather Icons: menu -->
+					<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+						<path
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M3 12h18M3 6h18M3 18h18"
+						/>
+					</svg>
+				</button>
+			</span>
 			<div class="dropdown-menu dropdown-menu-bottom-right">
 				<CurrentPageDropdown href="/">Home</CurrentPageDropdown>
 				<CurrentPageDropdown href="/all">All submissions</CurrentPageDropdown>
 				<CurrentPageDropdown href="/stats">Statistics</CurrentPageDropdown>
 			</div>
 		</div>
-		<a href="/" class="font-bold px-4">TDRMCCR3ST</a>
+		<a href="/" class="font-bold px-0 md:px-4">TDRMCCR3ST</a>
 		<!-- Navbar on 640px+ -->
 		<div class="px-4 flex-row gap-4 items-center hidden md:flex">
 			<CurrentPageNavbar href="/">Home</CurrentPageNavbar>
