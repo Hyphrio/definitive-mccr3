@@ -24,10 +24,11 @@
 		></iframe>
 	{:else if showYtEmbeds === false}
 		<div
-			class="bg-gray-3 flex flex-col p-8 rounded-md w-full h-full prose dark:prose-invert items-center justify-center max-w-none"
+			class="bg-gray-3 flex flex-col p-8 rounded-md w-full h-full prose dark:prose-invert items-center justify-center max-w-none sm:aspect-video"
 		>
 			<h2 class="text-center">
-				By clicking this button, you agree that YouTube may collect personally identifiable information.
+				By clicking this button, you agree that YouTube may collect personally identifiable
+				information.
 			</h2>
 			<button
 				class="btn btn-primary"
@@ -40,7 +41,7 @@
 			>
 		</div>
 	{:else}
-		<div class="not-prose max-w-none w-full h-full bg-black p-8">
+		<div class="not-prose max-w-none w-full h-full bg-black p-8 aspect-video">
 			<!-- empty -->
 		</div>
 	{/if}
