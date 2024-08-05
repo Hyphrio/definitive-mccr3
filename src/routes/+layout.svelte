@@ -28,46 +28,23 @@
 	<div class="navbar-start">
 		<!-- Popover on small screens -->
 		<div class="dropdown px-2 md:hidden">
-			<span class="tooltip tooltip-bottom" data-tooltip="Menu">
-				<button class="btn btn-ghost p-3 h-auto" tabindex="0" aria-label="Open menu">
-					<!-- Feather Icons: menu -->
-					<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-						<path
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M3 12h18M3 6h18M3 18h18"
-						/>
-					</svg>
-				</button>
-			</span>
+			<button class="btn btn-ghost p-3 h-auto" tabindex="0" aria-label="Open menu">
+				<!-- Feather Icons: menu -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+					<path
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M3 12h18M3 6h18M3 18h18"
+					/>
+				</svg>
+			</button>
 			<div class="dropdown-menu dropdown-menu-bottom-right">
 				<CurrentPageDropdown href="/">Home</CurrentPageDropdown>
 				<CurrentPageDropdown href="/all">All submissions</CurrentPageDropdown>
 				<CurrentPageDropdown href="/stats">Statistics</CurrentPageDropdown>
-
-				<span class="tooltip tooltip-bottom" data-tooltip="Source code">
-					<a
-						target="_blank"
-						href="https://github.com/Hyphrio/definitive-mccr3"
-						aria-label="Source code on GitHub"
-						class="btn btn-ghost p-3 h-auto"
-					>
-						<!-- Feather Icons: GitHub -->
-						<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-							<path
-								fill="none"
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77A5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.4 13.4 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-							/>
-						</svg>
-					</a>
-				</span>
 			</div>
 		</div>
 		<a href="/" class="font-bold px-0 md:px-4">TDRMCCR3ST</a>
