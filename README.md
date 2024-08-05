@@ -11,7 +11,9 @@ Feather Icons
 
 ## Building
 Set SUPABASE_URL and SUPABASE_ANON_KEY on .env, then build.
-Note that the table on the webite is "Submissions", and the repository is still hardcoded
+
+Note that the table on the webite is "Submissions", and the repository is still hardcoded.
+
 Structure can be found at src/lib/submissions.ts
 
 ## Backend:
