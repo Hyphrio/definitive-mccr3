@@ -44,7 +44,6 @@
 			<div class="dropdown-menu dropdown-menu-bottom-right">
 				<CurrentPageDropdown href="/">Home</CurrentPageDropdown>
 				<CurrentPageDropdown href="/all">All submissions</CurrentPageDropdown>
-				<CurrentPageDropdown href="/stats">Statistics</CurrentPageDropdown>
 			</div>
 		</div>
 		<a href="/" class="font-bold px-0 md:px-4">TDRMCCR3ST</a>
@@ -52,7 +51,6 @@
 		<div class="px-2 flex-row gap-4 items-center hidden md:flex">
 			<CurrentPageNavbar href="/">Home</CurrentPageNavbar>
 			<CurrentPageNavbar href="/all">All submissions</CurrentPageNavbar>
-			<CurrentPageNavbar href="/stats">Statistics</CurrentPageNavbar>
 		</div>
 	</div>
 	<div class="navbar-end">

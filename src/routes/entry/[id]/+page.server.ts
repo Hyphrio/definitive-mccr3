@@ -21,6 +21,6 @@ export async function load({ params, url }) {
 
     return {
         submission,
-        showRatings
+        showRatings,
     }
 }
